@@ -1,4 +1,5 @@
 <?PHP
+	//Start the session
 	session_start(); 
 	require_once(getcwd()."/elements/functions/lib.php"); 
 	if(!$_SERVER['HTTPS'] && USELSSL) { header("Location: https://".SERVER."?".$_SERVER["QUERY_STRING"]); }
